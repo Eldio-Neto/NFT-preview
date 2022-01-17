@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  
+--Soft-blue: hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--main-BG: hsl(217, 54%, 11%);
+--card-BG: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    background-color:var(--main-BG);
+    color: var(--line);
+    padding: 2.50rem;
+}
+
+p{
+    font-weight: 300;
+}
+
+.container{
+    position: relative;
+    padding: 1.5rem;
+    margin: auto;
+    background-color:var(--card-BG);
+    max-width: 350px; 
+    border-radius: 20px;
+}
+
+ .container img{
+    position: relative;
+    border-radius: 20px ;
+    
+}
+
+ .main-equilibrium div{
+    position: absolute;
+    top: 25px;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    width: 86.5%;
+    height: 53%;
+    z-index: 999;
+    border-radius: 20px;
+    opacity: 0;
+}
+.main-equilibrium div:hover{
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.main-equilibrium div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) ;
+}
+
+.container h2{
+   margin: 15px 0 15px 0  ;
+}
+.title-card{
+    text-decoration: none;
+    color: var(--White);
+     
+}
+.title-card:hover{
+    
+    color: var(--cyan) ;
+     
+}
+
+.container ul{
+padding: 20px 0 20px 0;
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-bottom: 1px solid var(--line);
+}
+
+.container ul li{
+    display: flex;
+    align-items: center;
+}
+
+.container ul img{
+    margin-right: 3px;
+}
+
+.value{
+    color: var(--cyan);
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.avatar img{
+    width: 25px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.avatar p{
+    margin-left: 15px;
+}
+.name-card{
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--White);
+}
+.name-card:hover{
+    color: var(--cyan);
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
